@@ -24,6 +24,7 @@ export class IsAlcoholicDirective {
       this.renderer.setProperty(element, 'innerText', 'Alcoholic');
     } else {
       this.renderer.addClass(element, 'bg-success');
+      this.renderer.addClass(element, 'text-light');
       this.renderer.removeClass(element, 'bg-info');
       this.renderer.setProperty(element, 'innerText', 'Non-Alcoholic');
     }
